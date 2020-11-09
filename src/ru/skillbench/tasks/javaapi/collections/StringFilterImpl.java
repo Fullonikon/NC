@@ -3,8 +3,6 @@ package ru.skillbench.tasks.javaapi.collections;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.function.Predicate;
-import java.util.regex.Pattern;
 
 public class StringFilterImpl implements StringFilter {
 
