@@ -2,6 +2,8 @@ package ru.skillbench.tasks.text;
 
 
 import ru.skillbench.tasks.javaapi.collections.StringFilterImpl;
+import ru.skillbench.tasks.text.regex.CurriculumVitaeImpl;
+import ru.skillbench.tasks.text.regex.PatternsImpl;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,21 +11,12 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
-/*        StringFilterImpl impl = new StringFilterImpl();
+        CurriculumVitaeImpl test = new CurriculumVitaeImpl();
+        test.setText("Raz Smith \n\n (916)125-4171 495 926-93-47 ext.1846");
 
-        impl.add("aaa");
-        impl.add("bbb");
-        impl.add("ccc");
-        impl.add("ccc");
-        impl.add(null);
-
-
-        System.out.println(impl.getStringsContaining("a").next());*/
-        Pattern p = Pattern.compile("price");
-
-        var a = p.matcher("pro*");
-
-        System.out.println(a.find());
+        System.out.println(test.getFullName());
+        System.out.println(test.getLastName());
+        System.out.println(test.getPhones());
 
     }
 
